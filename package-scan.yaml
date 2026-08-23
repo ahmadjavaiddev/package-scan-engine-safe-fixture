@@ -1,0 +1,21 @@
+schemaVersion: 1
+packageManager: npm
+build:
+  adapter: javascript
+  command:
+    - npm
+    - run
+    - build
+  outputs:
+    - dist/**
+permissions:
+  build:
+    filesystem:
+      read:
+        - index.js
+      write:
+        - dist/**
+scenarios:
+  - id: import-esm
+    type: import
+    entrypoint: .

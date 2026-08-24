@@ -14,6 +14,7 @@ permissions:
       read:
         - index.js
       write:
+        - dist
         - dist/**
 scenarios:
   - id: import-esm

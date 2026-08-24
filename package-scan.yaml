@@ -1,7 +1,7 @@
 schemaVersion: 1
 packageManager: npm
 build:
-  adapter: javascript
+  adapter: typescript
   command:
     - npm
     - run
@@ -12,7 +12,9 @@ permissions:
   build:
     filesystem:
       read:
-        - index.js
+        - index.ts
+        - is-number.d.ts
+        - tsconfig.json
       write:
         - dist
         - dist/**

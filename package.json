@@ -9,5 +9,8 @@
   ],
   "scripts": {
     "build": "node build.mjs"
+  },
+  "dependencies": {
+    "is-number": "7.0.0"
   }
 }
